@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+
+
+vector<int> topologicalSort(vector<vector<int>> &graph,
+ int edges, int nodes) {
+vector<int>adj[nodes];
+for(int i=0;i<graph.size();i++){
+    adj[graph[i][0]].push_back(graph[i][1]);
+}
+
+vector<int>ans;
+vector<int>in(nodes,0);
+
+for(int i=0;i<nodes;i++){
+    for(auto it:adj[i]){
+        in[it]++;
+    }
+}
+
+queue<int>q;
+for(int i=0;i<in.size();i++)
+{
+    if(in[i]==0){
+        q.push(i);
+    }
+}
+while(!q.empty()){
+
+    int node=q.front();
+    q.pop();
+    ans.push_back(node);
+    for(auto it:adj[node]){
+        in[it]--;
+        if(in[it]==0){
+            q.push(it);
+        }
+    }
+}
+
+return ans;
+
+
+}
