@@ -1,0 +1,1061 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Lobster&family=Playball&family=Radio+Canada&family=Ramaraja&family=Red+Hat+Mono:wght@300&family=Tapestry&family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Dancing+Script:wght@500&family=Lato&family=Lobster&family=Playball&family=Ramaraja&family=Red+Hat+Mono:wght@300&family=Tapestry&family=Ubuntu:ital,wght@1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: pointer;
+    font-family: 'Radio Canada', sans-serif;
+
+
+}
+
+
+
+
+
+
+
+
+
+header {
+    width: 100%;
+
+
+}
+
+.nav1 {
+
+
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    border-bottom: 5px solid black;
+    margin-bottom: 20px;
+}
+
+.left {
+    cursor: pointer;
+    flex-basis: 50%;
+    margin: 20px 0px;
+    display: flex;
+    padding-left: 10%;
+
+}
+
+.left a {
+    text-decoration: none;
+    color: rgb(243, 21, 21);
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 0px 5px;
+}
+
+.right {
+    flex-basis: 50%;
+    margin: 20px 0px;
+
+}
+
+.right i {
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin: 0px 40px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 8px;
+
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.right i:hover {
+    transform: rotate(360deg);
+
+}
+
+.nav2 {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.head {
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+}
+
+.fr h1 {
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 4.5rem;
+    display: flex;
+    cursor: pointer;
+    font-weight: bolder;
+    color: rgb(246, 34, 34);
+}
+
+.fr h1 span {
+    margin: 0px 20px;
+    color: blue;
+}
+
+.para p {
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+#btn {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background-color: rgb(5, 5, 5);
+    padding: 10px 20px;
+    border: 5px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+
+    transition: all .5s ease-in-out;
+}
+
+button a {
+    text-decoration: none;
+
+    color: rgb(252, 247, 247);
+}
+
+button:hover {
+    transform: scale(1.3);
+
+    background-color: rgb(228, 30, 30);
+
+}
+
+.nav3 {
+    max-width: 70%;
+    margin: 10px auto;
+    padding: 7px;
+    background-color: rgb(31, 4, 4);
+    border: 3px solid rgb(15, 3, 3);
+    border-radius: 20px;
+}
+
+.li1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.li1 li {
+    position: relative;
+    font-weight: bold;
+    z-index: 1;
+
+    margin: 5px 15px;
+    font-size: 1.7rem;
+    list-style: none;
+}
+
+.li1 li:hover>ul {
+
+    display: block;
+}
+
+.li1 li a {
+
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+    padding: 10px;
+
+
+}
+
+.li1 li i {
+    margin-left: 10px;
+
+    color: rgb(255, 252, 252);
+    font-size: 1.5rem;
+
+
+}
+
+.li1 li a:hover {
+    border: 3px solid red;
+    border-radius: 10px;
+    padding: 6px;
+    color: rgb(255, 249, 249);
+    background-color: rgb(252, 5, 5);
+
+}
+
+.ff {
+    padding: 6px;
+    border: 3px solid red;
+    border-radius: 6px;
+    color: rgb(255, 253, 253);
+    background-color: rgb(244, 0, 0);
+
+}
+
+.li1 ul {
+    background-color: rgb(66, 64, 64);
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    display: none;
+    left: 70px;
+}
+
+.li1 ul li {
+    color: rgb(243, 0, 0);
+    border-bottom: 3px solid white;
+    line-height: 70px;
+
+}
+
+.box1 {
+    background: rgba(0, 0, 0, 0.55)url('./img/bg.jpg') no-repeat center /cover;
+    /* width: 100%; */
+    height: 80vh;
+    margin: 20px 0px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: darken;
+
+}
+
+.text {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.text h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Akaya Kanadaka', cursive;
+    text-decoration: underline;
+
+
+}
+
+#fi {
+    font-family: 'Akaya Kanadaka', cursive;
+    margin: 10px 2px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 2.5rem;
+
+}
+
+.sho {
+    font-family: 'Akaya Kanadaka', cursive;
+    margin: 10px 2px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(224, 237, 226);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.text span p {
+    font-weight: bolder;
+    margin: 0px 20px;
+    color: orangered;
+}
+
+.pic {
+    height: 40vh;
+    width: 30%;
+
+
+}
+
+.pic img {
+    border: transparent;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.shoes {
+    padding: 50px 100px;
+
+}
+
+.one h1 {
+    text-align: center;
+    color: red;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.one span {
+    color: rgb(39, 37, 37);
+}
+
+.one p {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.container {
+    width: 100%;
+    padding: 30px;
+
+}
+
+.card {
+    margin: 30px 15px;
+    position: relative;
+    display: inline-block;
+
+
+}
+
+.img {
+
+    width: 100%;
+    height: 40vh;
+
+
+
+}
+
+.img img {
+    border: transparent;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease-in-out;
+}
+
+.card::before {
+    border: transparent;
+    border-radius: 0px 0px 20px 0px;
+    content: '20% OFF';
+   
+   
+    font-size: 1.5rem;
+    color: white;
+    padding: 6px 8px;
+    background-color: rgb(79, 79, 240);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.card h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 15px 0px;
+    transition: all .4s ease-in-out;
+}
+
+.card span {
+    display: flex;
+    justify-content: center;
+}
+
+.card span i {
+    color: goldenrod;
+    font-size: 1.6rem;
+
+}
+
+.card p {
+    text-align: center;
+    margin: 15px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: red;
+}
+
+.card img:hover,
+.card h1:hover {
+    transform: scale(1.3);
+
+
+}
+
+strong {
+    color: blueviolet;
+    margin: 0px 3px;
+}
+
+.bt {
+    display: flex;
+    justify-content: center;
+}
+
+.bt button {
+    padding: 13px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: red;
+    border: transparent;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.cont {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.smbox {
+    position: relative;
+    display: inline-block;
+
+    margin: 10px 0px;
+
+}
+
+.imgs {
+    width: 100%;
+    height: 40vh;
+}
+
+.imgs img {
+    border: transparent;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease-in-out;
+}
+
+.smbox::before {
+    border: transparent;
+    border-radius: 0px 0px 20px 0px;
+    content: '20% OFF';
+    
+    font-size: 1.5rem;
+    color: white;
+    padding: 6px 8px;
+    background-color: rgb(79, 79, 240);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.smbox h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 15px 0px;
+    transition: all .4s ease-in-out;
+}
+
+.smbox span {
+    display: flex;
+    justify-content: center;
+}
+
+.smbox span i {
+    color: goldenrod;
+    font-size: 1.6rem;
+
+}
+
+.smbox p {
+    text-align: center;
+    margin: 15px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: red;
+}
+
+.smbox img:hover,
+.card h1:hover {
+    transform: scale(1.3);
+
+
+}
+
+.gad {
+    padding: 30px;
+}
+
+.box3 {
+    padding: 3% 10%;
+
+    background-color: rgb(221, 216, 216);
+}
+
+.box3 .swiper {
+
+    width: 100%;
+    padding: 6%
+}
+
+.box3 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 50vh;
+
+}
+
+.box3 .swiper-slide img {
+    border: transparent;
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    border: 2px solid rgb(112, 110, 110);
+    width: 30%;
+    
+    border-radius: 20px;
+}
+
+.two img {
+    margin-bottom: 7%;
+    border: transparent;
+    border-radius: 30px;
+    width: 30%;
+}
+
+.two h1 {
+
+    color: rgb(0, 251, 59);
+    text-align: center;
+}
+
+.two h1 span {
+    color: rgb(40, 178, 233);
+}
+
+.two .in span {
+    font-size: 2rem;
+
+    color: white;
+}
+
+.in {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.in img {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.two p {
+    font-size: 1.4rem;
+    color: white;
+
+
+}
+
+.pop {
+    margin: 13px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.pop i {
+    font-size: 1.4rem;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border: transparent;
+    border-radius: 20px;
+}
+.phone{display: none;
+    background-color: rgb(65, 65, 63);
+}
+
+#menu{
+    display: none;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+.footer {
+    margin-top: 2.5rem;
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1150px) {
+
+    .phone{z-index: 1;
+        width: 70%;
+        position: absolute;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        display: none;
+     border:transparent;
+     border-radius: 0px 0px 40px 0px;
+     transition: 0.5s ease-in-out;
+    }
+    .ff{
+        border: transparent;
+        border-radius: 30px;
+        text-align: center;
+    }
+    .phone ul{
+        padding: 20px ;
+        display: block;
+    }
+    .phone ul li{
+        line-height: 4rem;
+        
+        position: relative;
+        list-style: none;
+        font-size: 2rem;
+        margin: 40px 0px;
+        font-weight: bold;
+    }
+    
+    .phone ul li a{  padding: 10px;
+        border: transparent;
+        color: rgb(219, 218, 218);
+        text-decoration: none;
+        
+        transition: all .3s ease-in-out;
+    }
+    .phone ul li a:hover{
+        background-color: red;
+        
+       
+        border-radius: 30px;
+    }
+    .phone ul li  i{
+        margin-left: 5px;
+    }
+    .phone ul ul{
+        z-index: 1;
+        position: absolute;
+        top: 95%;
+        left: 6%;
+        background-color: rgb(129, 87, 207);
+        color: rgb(255, 255, 255);
+        line-height: 1.5rem;
+        padding: 10px;
+        border: transparent;
+        border-radius: 30px;
+        display: none;
+        transition: all .5s ease-in-out;
+    }
+    .phone ul li{
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+
+    .phone ul li:hover>ul{
+        display: block;
+    }
+
+    .nav1 {
+        flex-direction: column;
+        padding-top: 10px;
+
+
+    }
+
+    .left h1,
+    .left a {
+        font-size: 1.1rem;
+    }
+
+    .right,
+    .left {
+        margin: 10px 0px;
+        flex-basis: 50%;
+
+
+    }
+
+    .right i {
+        font-size: 1.3rem;
+        margin: 0px 20px;
+        padding: 4px;
+
+        border-radius: 10px;
+        transition: all .3s ease-in-out;
+    }
+
+    .fr h1 {
+        
+            font-size: 2.3rem;
+        
+    }
+
+    .para p {
+        font-size: 1.2rem;
+    }
+
+    #btn {
+        font-size: 1.3rem;
+        padding: 8px 10px;
+    }
+
+    .nav3 {
+        display: none;
+    }
+
+    .box1 {
+        background-attachment: fixed;
+        padding: 40px 0px;
+        margin: 10px 0px;
+        flex-direction: column-reverse;
+        position: relative;
+
+    }
+
+    .fr h1 span {
+        margin: 0px 5px;
+        color: blue;
+    }
+
+    .text {
+        flex-basis: 100%;
+
+        margin-right: 0px;
+    }
+
+    .text h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0px;
+    }
+
+    #fi {
+        margin: 6px 3px;
+        font-size: 1.3rem;
+    }
+
+    .pic {
+
+        width: 55%;
+    }
+
+    .text span p {
+
+        margin: 0px 5px;
+
+    }
+
+    .sho {
+
+        font-size: 2rem;
+
+    }
+
+    .one h1 {
+
+        font-size: 2.5em;
+
+        margin-bottom: 10px;
+    }
+
+    .shoes {
+        padding: 30px 20px;
+    }
+
+    .one p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .container {
+
+        padding: 0px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 20px 10px;
+
+    }
+
+    .card h1,
+    .smbox h1 {
+
+        font-size: 1.7rem;
+        margin: 10px 0px;
+    }
+
+    .card span i,
+    .smbox span i {
+
+        font-size: 1.3rem;
+    }
+
+    .card p,
+    .smbox p {
+
+        margin: 14px 0px;
+        font-size: 1.6rem;
+    }
+
+    .smbox::before,.card::before {
+left: 0%;
+        width: 20%;
+     
+        font-size: 14px;
+
+    }
+
+    .bt button {
+        padding: 10px;
+
+    }
+
+    .gad {
+        padding: 30px 20px;
+    }
+
+    .smbox {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .img,.imgs{
+
+       width: 100%;
+        height: 50vh;
+       
+    }
+    .box3 {
+        padding: 3% 5%;
+        
+    }
+    .box3 .swiper {
+        width: 100%;
+        padding: 0%;
+    }
+    
+    
+    .box3 .swiper-slide {
+      
+        width: 45%;
+        height: 33vh;
+        margin-bottom: 30px;
+     
+    
+    }
+  
+    
+    
+    h1 {
+        font-size: 1.3rem;
+       
+    }
+    .in{
+        flex-direction: column;
+    }
+    .in img{
+        margin: 10px auto;
+    }
+    .two .in span {
+        font-size: 1.3rem;
+       
+    }
+    .two {
+        padding: 2% 5%;
+        width: 70%;
+        margin: 15px auto;
+    }
+    .two p {
+        font-size: 1.2rem;
+        color: white;
+    }
+    
+    .pop i {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+    #menu{position: absolute;
+        top: 3%;
+        right: 0%;
+        display: block;
+        color: red;
+        font-size: 2.5rem;
+        padding: 8px;
+        background-color: rgb(185, 180, 180);
+        border: transparent;
+        border-radius:  20px 0px 0px 20px;
+        z-index: 1;
+    }
+    #menu:hover{
+        background-color: rgb(47, 46, 46);
+    }
+  
+
+}
