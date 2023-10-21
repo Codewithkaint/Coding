@@ -1,101 +1,539 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APKI APNI DUKAN</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/0524065bf8.js" crossorigin="anonymous"></script>
 
 
-  <title>Document</title>
 </head>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    background-image: url("https://wallpapercave.com/dwp1x/fto5lYX.jpg");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #qrcodes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-  }
-</style>
 
 <body>
-  <div id="qrcodes"></div>
+    <header >
+        <nav class="nav1">
+            <div class="left">
+                <h1>Welcome to E-shop</h1>
+                <a href="#">BOOK</a>
+                <h1>OR</h1>
+                <a href="#">ORDER</a>
+            </div>
+            <div class="right">
+                <i class="fa fa-phone"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-twitter"></i>
+
+            </div>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-  <script>
+        </nav>
+        <nav class="nav2">
+            <div class="head">
+                <div class="fr">
+                    <h1>APKI<span>APNI </span> DUKAN</h1>
+                </div>
+                <div class="para">
+                    <p>ALL you want is HERE</p>
+                </div>
+
+            </div>
+            <div class="order">
+                <button id="btn"><a href="./wer.html">ORDER</a> </button>
+            </div>
+
+        </nav>
+        <nav class="nav3">
+            <ul class="li1">
+                <li class="ff"><a href="#mn">HOME</a></li>
+                <li><a href="#ops">SHOES</a></li>
 
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDioQ5FOzeKMwpBYvv6FGWMtX3Pm1DTGEQ",
-  authDomain: "attendance-cb801.firebaseapp.com",
-  databaseURL: "https://attendance-cb801-default-rtdb.firebaseio.com",
-  projectId: "attendance-cb801",
-  storageBucket: "attendance-cb801.appspot.com",
-  messagingSenderId: "1076335537180",
-  appId: "1:1076335537180:web:d94e8466df91ce505a83d9",
-  measurementId: "G-HGYLFRY02C"
-};
+                </li>
+                <li><a href="#" class="fff">GADGETS<i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li>SMARTPHONES</li>
+                        <li>LAPTOPS</li>
+                        <li>TABLETS</li>
+                    </ul>
+                </li>
+                <li><a href="#ser" class="fff">GROCERY</a></li>
+            </ul>
+        </nav>
 
-firebase.initializeApp(firebaseConfig)
-var newCode = firebase.database().ref("checkValidity");
-  
-var i=1;
-let url="a"
+        
 
-const baseUrl = "https://codewithkaint.github.io/Atendence_project/new_plan.html";
-
-// The container element for the QR codes
-const container = document.getElementById("qrcodes");
-    setInterval(() => {
-        newCode.remove()
-      const qrCode = document.createElement("div");
-  let x= Math.floor(Math.random() * (36 - 2 + 1) ) + 2;
-  let y= Math.floor(Math.random() * (7 - 3 + 1) ) + 3;
-  const identifier = Math.random().toString(x).substring(y);
-      
-
-      url = `${baseUrl}?id=${identifier}`;
-
-      NewCode=newCode.push()
-
+        <section class="box1" id="mn">
+            <i class="fa fa-anchor" id="menu"></i>
+            <section class="phone">
+                <ul >
+                    <li ><a href="#mn" class="ff">HOME</a></li>
+                    <li><a href="#ops">SHOES</a></li>
+                    
+                    <li><a href="#ser" class="fff">GROCERY</a></li>
+                    <li><a href="#" class="fff">GADGETS<i class="fa fa-caret-down"></i></a>
+                        <ul>
+                            <li>SMARTPHONES</li>
+                            <li>LAPTOPS</li>
+                            <li>TABLETS</li>
+                        </ul>
+                    </li>
+                </ul>
     
-NewCode.set({
-    key:url
-  });
-     
-      new QRCode(qrCode, {
-        text: url,
-        width: 400,
-        height: 400,
-      });
+            </section>
+            <div class="text" >
 
-      // Append the QR code element to the container
-      container.appendChild(qrCode);
-      setTimeout(() => {
-        container.innerHTML = ""
 
-      }, 4000);
+                <h1> HELLO</h1>
+                <span id="fi">WELCOME TO YOU ALL IN-</span>
+                <span class="sho">APKI <p> APNI </p> DUKAN</span>
+
+
+            </div>
+            <div class="pic">
+                <img src="./img/ww.jpg" alt="" srcset="">
+            </div>
+        </section>
+    </header>
+    <section class="shoes" id="ops">
+        <div class="one">
+            <h1>FOOT <span>WEAR</span></h1>
+            <p>Here Are Some <strong>Shoes</strong> That You Will Make You <strong> COMFORTABLE </strong></p>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="img">
+                    <img src="./img/s11.jpeg" alt="" srcset="">
+                </div>
+                <h1>CAMPUS</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$300</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./img/s22.jpeg" alt="" srcset="">
+                </div>
+                <h1>GOLDSTAR</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$400</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./img/s77.jpeg" alt="" srcset="">
+                </div>
+                <h1>NIKE</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$100</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./img/s44.jpeg" alt="" srcset="">
+                </div>
+                <h1>CAMPUS</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$600</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./img/s33.jpeg" alt="" srcset="">
+                </div>
+                <h1>REEBOK</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$500</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./img/s66.jpeg" alt="" srcset="">
+                </div>
+                <h1>CAMPUS</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$980</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./img/s55.jpeg" alt="" srcset="">
+                </div>
+                <h1>ADIDAS</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$1000</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./img/s88.jpeg" alt="" srcset="">
+                </div>
+                <h1>PUMA</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$200</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./img/s99.jpeg" alt="" srcset="">
+                </div>
+                <h1>NIKE</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$300</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gad" id="loc">
+        <div class="one">
+            <h1>NEW<span> GADGETS</span></h1>
+            <p>Here Are Some <strong>Gadgets</strong> Like <strong>Phone, Laptops, Tabs </strong></p>
+        </div>
+        <div class="cont">
+            <div class="smbox">
+                <div class="img">
+                    <img src="./img/p1.jpg" alt="" srcset="">
+                </div>
+                <h1>HTC</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$300</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="smbox">
+                <div class="img">
+                    <img src="./img/p2.jpg" alt="" srcset="">
+                </div>
+                <h1>VIVO</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$400</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="smbox">
+                <div class="img">
+                    <img src="./img/p3.jpg" alt="" srcset="">
+                </div>
+                <h1>NOKIA</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$100</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="smbox">
+                <div class="imgs">
+                    <img src="./img/l1.jpg" alt="" srcset="">
+                </div>
+                <h1>H.P.</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$600</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="smbox">
+                <div class="imgs">
+                    <img src="./img/l2.jpg" alt="" srcset="">
+                </div>
+                <h1>DELL</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$500</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="smbox">
+                <div class="imgs">
+                    <img src="./img/l3.jpg" alt="" srcset="">
+                </div>
+                <h1>ASUS</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$980</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="smbox">
+                <div class="imgs">
+                    <img src="./img/t1.jpg" alt="" srcset="">
+                </div>
+                <h1>LENEVO</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$1000</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="smbox">
+                <div class="imgs">
+                    <img src="./img/t2.jpg" alt="" srcset="">
+                </div>
+                <h1>SAMSUNG</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$200</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="smbox">
+                <div class="imgs">
+                    <img src="./img/t3.jpg" alt="" srcset="">
+                </div>
+                <h1>I-PAD</h1>
+
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$300</p>
+                <div class="bt">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="box3" id="ser">
+        <div class="one">
+            <h1>GROCERY<span> ITEMS</span></h1>
+            <p>Here Are Some <strong>ITEMS</strong> for <strong>HOME USE
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/m1.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/m5.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/m3.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/m6.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/m4.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/m2.jpg">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
     
-    }, 7000);
 
-  </script>
+    <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+    </ul>
+    <p>&copy;Made By Neelam</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+ 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script>
+       
+        let box=document.querySelector('.phone')
+        let menu=document.getElementById('menu')
+        box.style.display="none";
+        menu.onclick=function(){
+            if(box.style.display=="none"){
+                box.style.display="block"
+            }
+            else{box.style.display="none"
+
+            }
+        }
+
+    </script>
 </body>
 
 </html>
